@@ -2,7 +2,7 @@
 \alias{iprDmpOptions}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+User defined or default options used for DMP calculations.
 }
 \description{
 Ascertain DMPs based on user parameters or default.
