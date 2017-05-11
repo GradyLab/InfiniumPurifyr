@@ -2,7 +2,7 @@
 \alias{iprProgressBar}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Simple progress bar.
+Simple progress bar for enrichment calculations progress.
 }
 \description{
 A simple progress bar to track enrichment estimation calculation status.
