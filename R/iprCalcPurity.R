@@ -13,7 +13,7 @@ ipr.calcPurity <- function(df,hyper,hypo){
                           rep(0,nrow(df)))
   colnames(dfreturn2) <- c("Sample_ID","IPR.purity")
   dfreturn2[,1] <- rownames(df)
-  message("Computing kde modes of ",length(hyper)," hypermethylated and ",length(hypo)," hypomethylated DMPs for ",nrow(df)," samples...")
+  message("Computing the modes of ",length(hyper)," hypermethylated and ",length(hypo)," hypomethylated DMPs for ",nrow(df)," samples...")
   message("Dim of df is: nrow=",nrow(df)," ncol=",ncol(df))
   
   for(samplei in 1:nrow(df)){
@@ -31,7 +31,7 @@ ipr.calcPurity <- function(df,hyper,hypo){
     message("Sample ",isampleid," has estimated purity: ",round(ipurity,3),".")
     
     # progress bar
-    ipr.progressBar(i=samplei,dur=nrow(df),unit="samples")
+    iprProgressBar(i=samplei,dur=nrow(df),unit="samples")
     
   }
   return(dfreturn2)
