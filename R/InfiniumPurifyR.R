@@ -15,7 +15,7 @@ InfiniumPurifyR <- function(df,calcPurity=TRUE,
   # 1. calculate DMPs?
   if(!getDMPs==FALSE){
     message("Setting up DMP test...")
-    dfreturn1 <- ipr.dmpOptions(df=df,getDMPs=getDMPs,varfilt=varfilt,
+    dfreturn1 <- iprDmpOptions(df=df,getDMPs=getDMPs,varfilt=varfilt,
                                 nsigprobes=nsigprobes,
                                 dmpVariablename=dmpVariablename,
                                 dmpVariancefiltTissue=dmpVariancefiltTissue)
@@ -28,14 +28,14 @@ InfiniumPurifyR <- function(df,calcPurity=TRUE,
   
   # 2. calculate tumor purity?
   if(calcPurity==TRUE){
-    dfreturn2 <- ipr.calcPurity(df=df,hyper=hyper,hypo=hypo)
+    dfreturn2 <- iprCalcPurity(df=df,hyper=hyper,hypo=hypo)
     message("Success! Completed purity estimates for all samples.")  
   }
   
   # 3. plot unimodal distributions?
   if(plotunimod==TRUE){
     message("Plotting unimodal distributions...")
-    ipr.densplotUnimod(df=df,hyper=hyper,hypo=hypo,main=plotunimod.main,plotunimod.ymax)
+    iprDensplotUnimod(df=df,hyper=hyper,hypo=hypo,main=plotunimod.main,plotunimod.ymax)
   }    
   
   # results summary/output
