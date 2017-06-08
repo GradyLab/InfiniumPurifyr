@@ -1,6 +1,5 @@
 # InfiniumPurifyr
-Estimate tumor enrichment from methylation array data.  
-This package is downloadable using the following in R:   
+Estimate tumor enrichment from methylation array data. This package is downloadable using the following in R:   
 `require(devtools);   install_github("metamaden/InfiniumPurifyr")`
 
 ## Description
