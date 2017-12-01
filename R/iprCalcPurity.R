@@ -21,7 +21,7 @@ iprCalcPurity <- function(df,hyper,hypo){
     dfi <- df[samplei,]
     isampleid <- as.character(rownames(df)[samplei])
     # get modified methylation levels
-    imodmethyl <- ipr.dmpModmethy(betas=dfi,hyper=hyper,hypo=hypo)
+    imodmethyl <- iprDmpModmethy(betas=dfi,hyper=hyper,hypo=hypo)
     imodmethyl <- imodmethyl[!is.na(imodmethyl)]
     # get sample purity estimate
     idens.index <- unlist(density(imodmethyl)[1])
