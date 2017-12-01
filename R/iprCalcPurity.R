@@ -1,4 +1,4 @@
-ipr.calcPurity <- function(df,hyper,hypo){
+iprCalcPurity <- function(df,hyper,hypo){
   if(length(intersect(hyper,hypo))>0){
     return(message("ERROR: There is at least one probe in both hypo- and hyper-methylated CpG lists!"))
   }
