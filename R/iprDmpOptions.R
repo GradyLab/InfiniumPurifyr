@@ -1,4 +1,4 @@
-ipr.dmpOptions <- function(df,getDMPs="ftest",varfilt=NULL,nsigprobes=1500,dmpVariablename,
+iprDmpOptions <- function(df,getDMPs="ftest",varfilt=NULL,nsigprobes=1500,dmpVariablename,
                            dmpVariancefiltTissue){
   
   if(class(df) %in% c("MethylSet","GenomicMethylSet","GenomicRatioSet","RGChannelSet")){
