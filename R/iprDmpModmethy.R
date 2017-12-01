@@ -1,4 +1,4 @@
-ipr.dmpModmethy <- function(betas,hyper=hyper,hypo=hypo){
+iprDmpModmethy <- function(betas,hyper=hyper,hypo=hypo){
   
   dmpmod.cgretain <- c()
   for(i in 1:length(betas)){
