@@ -18,3 +18,9 @@ The implementation in InfiniumPurifyR is as follows:
 
 An example is with a set of esophageal adenocarcinoma samples with subtypes HM, IM, LM, and MM. Using DMVPs derived from TCGA EACs as in the workflow above, we generate the following unimodal distributions with `plotunimod=TRUE`:
 ![alt text](https://github.com/metamaden/InfiniumPurifyr/blob/master/ipr_exe.jpg "Unimodal Distributions")
+
+## News
+
+12/1/2017: An official port is offered by the original authors on CRAN [here](https://cran.r-project.org/web/packages/InfiniumPurify/index.html). Findings have been validated for ESCA iDMPs using both packages, and purity results are identical.
+
+#
