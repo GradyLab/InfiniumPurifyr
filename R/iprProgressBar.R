@@ -1,4 +1,4 @@
-ipr.progressBar <- function(i,dur,unit){
+iprProgressBar <- function(i,dur,unit){
   
   stat.prognum <- round((i/dur)/2,2)*100
   stat.prog <- rep("=",stat.prognum)
